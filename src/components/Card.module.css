@@ -1,0 +1,114 @@
+.card {
+  background-color: #ecf1ff;
+  padding: 1rem 2rem;
+  margin: 0.8rem;
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 1fr;
+  align-items: center;
+  width: 40%;
+  border: 1.5px solid #b3b3ba;
+  border-radius: 0.6rem;
+}
+
+.checkbox {
+  border: none;
+  justify-self: flex-start;
+  align-self: center;
+  height: 3rem;
+  width: 3rem;
+}
+
+.cardText {
+  align-self: center;
+  width: auto;
+  overflow: scroll;
+  font-size: 2.5rem;
+  margin: 0rem 2rem;
+}
+
+.trashBtn {
+  align-self: center;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+}
+
+.trashIcon {
+  color: #ff4545;
+  z-index: 1;
+}
+
+.trashIcon:hover {
+  color: #ea0000;
+  transform: scale(1.1);
+}
+
+.trashIcon:active {
+  transform: scale(0.97);
+  transition: all 0.1s ease-out;
+}
+
+.strikeThrough {
+  text-decoration: line-through;
+  font-size: 2.5rem;
+  margin: 0rem 2rem;
+}
+
+.cardBlur {
+  background-color: #ecf1ff;
+  padding: 1rem 2rem;
+  margin: 0.8rem;
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 1fr;
+  align-items: center;
+  width: 40%;
+  border: 1.5px solid #b3b3ba;
+  border-radius: 0.6rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 50rem) {
+  .card,
+  .cardBlur {
+    width: 70%;
+    height: 7rem;
+  }
+  .cardText,
+  .strikeThrough {
+    font-size: 2.5rem;
+  }
+  .trashBtn,
+  .trashIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .checkbox {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 38rem) {
+  .card,
+  .cardBlur {
+    width: 80%;
+    height: 5rem;
+  }
+  .checkbox {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .trashBtn,
+  .trashIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .cardText,
+  .strikeThrough {
+    align-self: center;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+}
