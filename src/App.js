@@ -1,6 +1,6 @@
 import styles from "../src/App.module.css";
 import React, { useState } from "react";
-import CardContainer from "./components/CardContainer";
+// import CardContainer from "./components/CardContainer";
 import HeaderSection from "./components/HeaderSection";
 
 function App() {
