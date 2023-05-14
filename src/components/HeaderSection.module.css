@@ -92,22 +92,47 @@
 
 ul {
   display: flex;
+  align-items: center;
+  /* outline: 2px solid red; */
+  margin: 5rem 0rem;
 }
 
 li {
-  outline: 2px solid green;
+  list-style: none;
+  /* outline: 2px solid green; */
   flex-grow: 1;
 }
 
 .input_container {
-  flex-basis: 60rem;
+  display: flex;
+  justify-content: center;
+  flex-basis: 50rem;
 }
 
 .addBtn_container {
+  justify-self: end;
   flex-basis: 20rem;
 }
 
 .logo {
+  text-align: end;
   font-size: 5rem;
   flex-basis: 15rem;
+  letter-spacing: -0.52rem;
+  font-weight: 700;
+}
+
+.input {
+  width: 75%;
+  font-size: 2.8rem;
+  border-radius: 0.6rem;
+  border: 1.5px solid #1749d4;
+  padding: 1.1rem 2rem 1.1rem 2rem;
+}
+
+.addBtn {
+  padding: 1.1rem 2rem 1.1rem 2rem;
+  font-size: 2.8rem;
+  background-color: #1749d4;
+  color: white;
 }

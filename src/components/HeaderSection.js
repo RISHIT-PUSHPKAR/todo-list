@@ -13,7 +13,7 @@ const HeaderSection = () => {
           />
         </li>
         <li className={styles.addBtn_container}>
-          <button>Add</button>
+          <button className={styles.addBtn}>Add</button>
         </li>
       </ul>
     </nav>
