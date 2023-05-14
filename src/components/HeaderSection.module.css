@@ -1,4 +1,4 @@
-.HeaderContainer {
+/* .HeaderContainer {
   background-color: white;
   margin: 0rem 0rem 3rem 0rem;
   padding: 2rem 0rem 2rem 0rem;
@@ -88,4 +88,26 @@
     align-self: center;
     justify-self: center;
   }
+} */
+
+ul {
+  display: flex;
+}
+
+li {
+  outline: 2px solid green;
+  flex-grow: 1;
+}
+
+.input_container {
+  flex-basis: 60rem;
+}
+
+.addBtn_container {
+  flex-basis: 20rem;
+}
+
+.logo {
+  font-size: 5rem;
+  flex-basis: 15rem;
 }
