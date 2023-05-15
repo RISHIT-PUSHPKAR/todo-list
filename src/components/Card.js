@@ -1,5 +1,16 @@
+import styles from "./Card.module.css";
+
 const Card = () => {
-  return <></>;
+  return (
+    <>
+      <div className="card">
+        <input type="checkbox" />
+        <div className="todo-text"></div>
+        <i class="fa-regular fa-trash"></i>
+        <i></i>
+      </div>
+    </>
+  );
 };
 
 export default Card;
