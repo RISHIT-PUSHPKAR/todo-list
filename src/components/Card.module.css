@@ -1,15 +1,13 @@
-@import url("../../node_modules/@fortawesome/fontawesome-free//css/fontawesome.min.css");
-
 /* .card {
   background-color: #ecf1ff;
+  border: 1.5px solid #b3b3ba;
   padding: 1rem 2rem;
+  border-radius: 0.6rem;
   margin: 0.8rem;
   display: grid;
   grid-template-columns: 0.3fr 3fr 1fr;
   align-items: center;
   width: 40%;
-  border: 1.5px solid #b3b3ba;
-  border-radius: 0.6rem;
 }
 
 .checkbox {
@@ -18,8 +16,8 @@
   align-self: center;
   height: 3rem;
   width: 3rem;
-}
-
+} */
+/* 
 .cardText {
   align-self: center;
   width: auto;
@@ -114,3 +112,38 @@
     margin-left: 1rem;
   }
 } */
+
+.card {
+  background-color: #ecf1ff;
+  border: 1.5px solid #b3b3ba;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  width: 36%;
+  height: 7vh;
+  /* margin: 0.8rem;
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 1fr;
+  align-items: center; */
+}
+
+.checkbox {
+  flex-shrink: 0;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-self: center;
+}
+
+.todo_text {
+  flex-basis: 90%;
+  align-self: center;
+  justify-self: flex-start;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.trashIcon {
+  align-self: center;
+  text-align: end;
+}

@@ -91,8 +91,9 @@
 } */
 
 ul {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 3rem;
   margin: 5rem 0rem;
   position: sticky;
   top: 0%;
@@ -100,30 +101,26 @@ ul {
 
 li {
   list-style: none;
-  flex-grow: 1;
 }
 
 .input_container {
   display: flex;
   justify-content: center;
-  flex-basis: 40rem;
 }
 
 .addBtn_container {
-  justify-self: end;
-  flex-basis: 25rem;
+  justify-self: start;
 }
 
 .logo {
-  text-align: end;
+  text-align: right;
   font-size: 5rem;
-  flex-basis: 15rem;
   letter-spacing: -0.52rem;
   font-weight: 700;
 }
 
 .input {
-  width: 85%;
+  width: 95%;
   font-size: 2.8rem;
   border-radius: 0.6rem;
   border: 1.5px solid #1749d4;
@@ -131,16 +128,16 @@ li {
 }
 
 .addBtn {
-  padding: 1.1rem 2.5rem 1.1rem 2.5rem;
-  font-size: 2.8rem;
-  background-color: #1749d4;
+  padding: 2rem 3.5rem 2rem 3.5rem;
+  font-size: 2.5rem;
+  background-color: #004be1;
   color: white;
   border-radius: 0.6rem;
   border: none;
 }
 
 .addBtn:hover {
-  background-color: #2a5be4;
+  background-color: #0052f7;
 }
 
 .addBtn:active {
