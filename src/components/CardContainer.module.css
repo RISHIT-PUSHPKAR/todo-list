@@ -1,8 +1,8 @@
 .card_container {
-  height: 30vh;
-  outline: 2px solid greenyellow;
+  height: 75vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
 }

@@ -90,13 +90,19 @@
   }
 } */
 
+form {
+  padding: 0.1rem 0rem 1.5rem 0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
 ul {
   display: grid;
   grid-template-columns: 1fr 1.3fr 1fr;
-  gap: 3rem;
-  margin: 5rem 0rem;
+  margin: 3.5rem 1rem;
   position: sticky;
-  top: 0%;
+  top: 0;
 }
 
 li {
@@ -117,10 +123,11 @@ li {
   font-size: 5rem;
   letter-spacing: -0.52rem;
   font-weight: 700;
+  margin: 0 2rem;
 }
 
 .input {
-  width: 95%;
+  width: 93%;
   font-size: 2.8rem;
   border-radius: 0.6rem;
   border: 1.5px solid #1749d4;
@@ -128,8 +135,8 @@ li {
 }
 
 .addBtn {
-  padding: 1.8rem 3.2rem 1.8rem 3.2rem;
-  font-size: 2.8rem;
+  padding: 1.5rem 3.5rem;
+  font-size: 3rem;
   background-color: #004be1;
   color: white;
   border-radius: 0.6rem;

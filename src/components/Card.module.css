@@ -120,14 +120,12 @@
   border-radius: 0.6rem;
   display: flex;
   width: 36%;
-  height: 7vh;
-  /* margin: 0.8rem;
-  display: grid;
-  grid-template-columns: 0.3fr 3fr 1fr;
-  align-items: center; */
+  height: 7.5vh;
+  margin: 0.8rem 0;
 }
 
 .checkbox {
+  margin-right: 1.5rem;
   flex-shrink: 0;
   border: none;
   height: 2.5rem;
@@ -139,11 +137,54 @@
   flex-basis: 90%;
   align-self: center;
   justify-self: flex-start;
-  padding: 0 2rem;
   font-size: 2rem;
 }
 
-.trashIcon {
+.edit {
+  flex-shrink: 0;
+  stroke: #959595;
+  margin: 0 1rem;
+  font-size: 2.6rem;
   align-self: center;
   text-align: end;
+}
+
+.edit:hover {
+  stroke: #002ca3;
+}
+
+.edit:active {
+  transform: scale(0.94);
+}
+
+.trashIcon {
+  flex-shrink: 0;
+  stroke: #959595;
+  font-size: 2.8rem;
+  align-self: center;
+  text-align: end;
+}
+
+.trashIcon:hover {
+  stroke: #ff4545;
+  animation: trashRotate 0.2s linear;
+}
+
+.trashIcon:active {
+  transform: scale(0.94);
+}
+
+@keyframes trashRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
 }

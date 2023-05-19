@@ -1,11 +1,22 @@
 import Card from "./Card";
 import styles from "./CardContainer.module.css";
 
-const CardContainer = () => {
+const CardContainer = ({ todoList, setTodoList }) => {
+  console.log("aaaaaaaaaaa", todoList);
   return (
     <>
       <div className={styles.card_container}>
-        <Card />
+        {todoList.map((todo) => {
+          return (
+            <Card
+              todo={todo.title}
+              key={todo.id}
+              setTodoList={setTodoList}
+              todoList={todoList}
+              onChange={(event) => event.preventDefault()}
+            />
+          );
+        })}
       </div>
     </>
   );
