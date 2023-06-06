@@ -1,15 +1,25 @@
 import Card from "./Card";
 import styles from "./CardContainer.module.css";
 
-const CardContainer = ({ todoList, setTodoList }) => {
-  console.log("aaaaaaaaaaa", todoList);
+const CardContainer = ({
+  setChangeBtnText,
+  setEditTodo,
+  changeBtnText,
+  todoList,
+  setTodoList,
+  setInput,
+}) => {
   return (
     <>
       <div className={styles.card_container}>
         {todoList.map((todo) => {
           return (
             <Card
-              todo={todo.title}
+              setEditTodo={setEditTodo}
+              changeBtnText={changeBtnText}
+              setChangeBtnText={setChangeBtnText}
+              setInput={setInput}
+              todo={todo}
               key={todo.id}
               setTodoList={setTodoList}
               todoList={todoList}

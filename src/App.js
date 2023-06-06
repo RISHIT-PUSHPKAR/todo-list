@@ -5,16 +5,29 @@ import { useState } from "react";
 const App = () => {
   const [input, setInput] = useState("");
   const [todoList, setTodoList] = useState([]);
+  const [changeBtnText, setChangeBtnText] = useState(false);
+  const [editTodo, setEditTodo] = useState();
 
   return (
     <>
       <HeaderSection
+        editTodo={editTodo}
+        setEditTodo={setEditTodo}
+        setChangeBtnText={setChangeBtnText}
+        changeBtnText={changeBtnText}
         input={input}
         setInput={setInput}
         todoList={todoList}
         setTodoList={setTodoList}
       />
-      <CardContainer todoList={todoList} setTodoList={setTodoList} />
+      <CardContainer
+        setEditTodo={setEditTodo}
+        changeBtnText={changeBtnText}
+        setChangeBtnText={setChangeBtnText}
+        todoList={todoList}
+        setTodoList={setTodoList}
+        setInput={setInput}
+      />
     </>
   );
 };
