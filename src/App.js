@@ -1,7 +1,6 @@
 import HeaderSection from "./components/HeaderSection";
 import CardContainer from "./components/CardContainer";
 import { useState } from "react";
-import LoginModel from "./components/LoginModel";
 
 const App = () => {
   const [input, setInput] = useState("");
@@ -11,7 +10,6 @@ const App = () => {
 
   return (
     <>
-      <LoginModel />
       <HeaderSection
         editTodo={editTodo}
         setEditTodo={setEditTodo}

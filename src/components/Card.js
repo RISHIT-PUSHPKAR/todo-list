@@ -42,7 +42,31 @@ const Card = ({
 
   return (
     <>
-      <div className={styles.card}>
+      <div className="container d-flex justify-content-center mb-3">
+        <div className="card w-75" style={{ maxWidth: "50rem" }}>
+          <div className="card-body d-flex p-2 ps-3 pe-2">
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              onClick={() => checkboxInputHandler(todo)}
+            />
+            <div
+              className={todo.checked ? styles.strikethrough : styles.todo_text}
+            >
+              {todo.title}
+            </div>
+            <FiEdit
+              className={todo.edit ? styles.editOn : styles.edit}
+              onClick={() => editHandler(todo)}
+            />
+            <HiOutlineTrash
+              className={styles.trashIcon}
+              onClick={() => deleteHandler(todo)}
+            />
+          </div>
+        </div>
+      </div>
+      {/* <div className={styles.card}>
         <input
           type="checkbox"
           className={styles.checkbox}
@@ -59,7 +83,7 @@ const Card = ({
           className={styles.trashIcon}
           onClick={() => deleteHandler(todo)}
         />
-      </div>
+      </div> */}
     </>
   );
 };
