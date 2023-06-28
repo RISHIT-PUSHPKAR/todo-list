@@ -43,22 +43,37 @@ const Card = ({
   return (
     <>
       <div className={styles.card}>
-        <input
-          type="checkbox"
-          className={styles.checkbox}
-          onClick={() => checkboxInputHandler(todo)}
-        />
-        <div className={todo.checked ? styles.strikethrough : styles.todo_text}>
+        <div
+          className="action-btn"
+          style={{
+            paddingTop: "0.3rem",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            // outline: "1px solid green",
+          }}
+        >
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            onClick={() => checkboxInputHandler(todo)}
+          />
+          <FiEdit
+            className={todo.edit ? styles.editOn : styles.edit}
+            onClick={() => editHandler(todo)}
+          />
+          <HiOutlineTrash
+            className={styles.trashIcon}
+            onClick={() => deleteHandler(todo)}
+          />
+        </div>
+        <div
+          className={`${
+            todo.checked ? styles.strikethrough : styles.todo_text
+          }`}
+        >
           {todo.title}
         </div>
-        <FiEdit
-          className={todo.edit ? styles.editOn : styles.edit}
-          onClick={() => editHandler(todo)}
-        />
-        <HiOutlineTrash
-          className={styles.trashIcon}
-          onClick={() => deleteHandler(todo)}
-        />
       </div>
     </>
   );

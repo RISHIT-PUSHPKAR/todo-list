@@ -53,7 +53,6 @@ const HeaderSection = ({
             placeholder="Enter Your Todos..."
             value={input}
             onChange={inputHandler}
-            maxLength={16}
             required
           />
         </li>

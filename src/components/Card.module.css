@@ -1,16 +1,17 @@
 .card {
-  background-color: #ecf1ff;
+  /* background-color: #ecf1ff; */
+  background-color: white;
   border: 1.5px solid #b3b3ba;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
   border-radius: 0.6rem;
   display: flex;
   width: 36%;
-  height: 7.5vh;
   margin: 0.8rem 0;
 }
 
 .checkbox {
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
+  margin: 0 2rem 30% 0;
   flex-shrink: 0;
   border: none;
   height: 2.5rem;
@@ -19,19 +20,22 @@
 }
 
 .todo_text {
-  flex-basis: 90%;
-  align-self: center;
-  justify-self: flex-start;
+  /* background-color: #ecf1ff; */
+  align-self: flex-start;
   font-size: 2rem;
+  overflow: hidden;
+  padding-right: 2rem;
 }
 
 .edit {
   flex-shrink: 0;
   stroke: #959595;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
+  margin: 0 2rem 30% 0;
   font-size: 2.6rem;
   align-self: center;
   text-align: end;
+  margin-left: auto;
 }
 
 .edit:hover {
@@ -43,8 +47,10 @@
 }
 
 .editOn {
+  margin-left: auto;
   flex-shrink: 0;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
+  margin: 0 2rem 30% 0;
   font-size: 2.6rem;
   align-self: center;
   text-align: end;
@@ -52,6 +58,7 @@
 }
 
 .trashIcon {
+  margin: 0 2rem 0 0;
   flex-shrink: 0;
   stroke: #959595;
   font-size: 2.8rem;
@@ -68,6 +75,15 @@
   transform: scale(0.94);
 }
 
+.strikethrough {
+  overflow: hidden;
+  padding-right: 2rem;
+  text-decoration: line-through;
+  align-self: flex-start;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
 @keyframes trashRotate {
   0% {
     transform: rotate(0deg);
@@ -82,19 +98,11 @@
     transform: rotate(-45deg);
   }
 }
-.strikethrough {
-  text-decoration: line-through;
-  flex-basis: 90%;
-  align-self: center;
-  justify-self: flex-start;
-  font-size: 2rem;
-  opacity: 0.5;
-}
 
 @media (max-width: 58rem) {
   .card {
     width: 70%;
-    height: 7vh;
+    height: auto;
   }
 
   .editOn,
@@ -113,6 +121,11 @@
   }
 }
 
+/* @media (max-width: 50rem) {
+  .card {
+    background-color: aqua;
+  }
+} */
 /* @media (max-width: 40rem) {
   .card {
     width: 70%;
