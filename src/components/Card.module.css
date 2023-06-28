@@ -93,8 +93,8 @@
 
 @media (max-width: 58rem) {
   .card {
-    width: 60%;
-    height: 6.5vh;
+    width: 70%;
+    height: 7vh;
   }
 
   .editOn,
@@ -104,8 +104,8 @@
   }
 
   .checkbox {
-    height: 2.2rem;
-    width: 2.2rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
   .todo_text,
   .strikethrough {
@@ -113,10 +113,10 @@
   }
 }
 
-@media (max-width: 40rem) {
+/* @media (max-width: 40rem) {
   .card {
     width: 70%;
-    height: 5.5vh;
+    height: 6rem;
   }
 
   .editOn,
@@ -126,11 +126,11 @@
   }
 
   .checkbox {
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
   .todo_text,
   .strikethrough {
     font-size: 2rem;
   }
-}
+} */

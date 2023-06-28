@@ -72,6 +72,7 @@ li {
   .input_container {
     grid-column: span 2;
     justify-content: flex-end;
+    height: 5.5rem;
   }
   .input {
     width: 76%;
@@ -115,6 +116,7 @@ li {
   .input_container {
     grid-column: span 2;
     justify-content: flex-end;
+    height: 5.5rem;
   }
   .input {
     width: 86.5%;
@@ -136,7 +138,7 @@ li {
   }
 
   .addBtn {
-    padding: 1rem 2.5rem;
+    padding: 1.5rem 2.5rem;
     font-size: 2rem;
     background-color: #004be1;
     color: white;
