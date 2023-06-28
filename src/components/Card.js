@@ -66,24 +66,6 @@ const Card = ({
           </div>
         </div>
       </div>
-      {/* <div className={styles.card}>
-        <input
-          type="checkbox"
-          className={styles.checkbox}
-          onClick={() => checkboxInputHandler(todo)}
-        />
-        <div className={todo.checked ? styles.strikethrough : styles.todo_text}>
-          {todo.title}
-        </div>
-        <FiEdit
-          className={todo.edit ? styles.editOn : styles.edit}
-          onClick={() => editHandler(todo)}
-        />
-        <HiOutlineTrash
-          className={styles.trashIcon}
-          onClick={() => deleteHandler(todo)}
-        />
-      </div> */}
     </>
   );
 };

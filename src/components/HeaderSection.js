@@ -1,4 +1,3 @@
-// import styles from "./HeaderSection.module.css";
 import { v4 as uuidv4 } from "uuid";
 
 const HeaderSection = ({
@@ -72,33 +71,6 @@ const HeaderSection = ({
         </div>
       </div>
     </nav>
-
-    // <nav className="navbar p-5">
-    //   <div className="container">
-    //     <div className="navbar-brand">
-    //       <h1 className="display-1 fw-medium">todo</h1>
-    //     </div>
-    //     <ul className="navbar-nav w-100">
-    //       <li className="nav-item " style={{ width: "100%" }}>
-    //         <form onSubmit={submitHandler} className=" hstack">
-    //           {/* <div className="input-group "> */}
-    //           <input
-    //             className="form-control form-control-lg me-5 "
-    //             type="text"
-    //             placeholder="Enter Your Todos..."
-    //             value={input}
-    //             onChange={inputHandler}
-    //             required
-    //           />
-    //           <button type="submit" className="btn btn-primary btn-lg">
-    //             {changeBtnText ? "Save" : "Add"}
-    //           </button>
-    //           {/* </div> */}
-    //         </form>
-    //       </li>
-    //     </ul>
-    //   </div>
-    // </nav>
   );
 };
 
