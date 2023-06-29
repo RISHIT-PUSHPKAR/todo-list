@@ -14,21 +14,20 @@
   font-size: 2rem;
 }
 
-.edit {
+/* .inputBox {
+  display: flex;
+  align-self: flex-start;
+
+  outline: 1px solid green;
+} */
+
+/* .edit {
   flex-shrink: 0;
   stroke: #959595;
   margin: 0 1rem;
   font-size: 2.6rem;
   align-self: center;
   text-align: end;
-}
-
-.edit:hover {
-  stroke: #002ca3;
-}
-
-.edit:active {
-  transform: scale(0.94);
 }
 
 .editOn {
@@ -38,39 +37,71 @@
   align-self: center;
   text-align: end;
   stroke: #002ca3;
+}  */
+
+.pencilIcon {
+  fill: #959595;
+  font-size: 2.6rem;
+  align-self: center;
+  text-align: end;
 }
 
+.pencilIconActive {
+  font-size: 2.6rem;
+  align-self: center;
+  text-align: end;
+  fill: #002ca3;
+}
+
+.pencilIcon:hover {
+  fill: #002ca3;
+}
+
+.pencilIcon:active {
+  transform: scale(0.94);
+}
+
+.deleteIcon {
+  color: #959595;
+  font-size: 2.6rem;
+  align-self: center;
+  text-align: end;
+  animation: all 0.1s ease-in-out;
+}
+
+.deleteIcon:hover {
+  color: #ff4545;
+}
+
+.deleteIcon:active {
+  transform: scale(0.74);
+}
+
+/* .edit:hover {
+  stroke: #002ca3;
+} */
+
+/* .edit:active {
+  transform: scale(0.94);
+} */
+/* 
 .trashIcon {
   flex-shrink: 0;
   stroke: #959595;
   font-size: 2.8rem;
   align-self: center;
   text-align: end;
-}
+} */
 
-.trashIcon:hover {
+/* .trashIcon:hover {
   stroke: #ff4545;
   animation: trashRotate 0.2s linear;
 }
 
 .trashIcon:active {
   transform: scale(0.94);
-}
+} */
 
-@keyframes trashRotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(45deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-45deg);
-  }
-}
 .strikethrough {
   text-decoration: line-through;
   flex-basis: 90%;
@@ -86,13 +117,14 @@
     height: 6.5vh;
   }
 
-  .editOn,
-  .edit,
-  .trashIcon {
+  .pencilIconActive,
+  .pencilIcon,
+  .deleteIcon {
     font-size: 2.8rem;
   }
 
   .checkbox {
+    justify-self: start;
     height: 2.2rem;
     width: 2.2rem;
   }
@@ -108,9 +140,9 @@
     height: 5.5vh;
   }
 
-  .editOn,
-  .edit,
-  .trashIcon {
+  .pencilIconActive,
+  .pencilIcon,
+  .deleteIcon {
     font-size: 2rem;
   }
 

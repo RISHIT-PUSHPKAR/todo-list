@@ -1,6 +1,8 @@
 import styles from "./Card.module.css";
 import { HiOutlineTrash } from "react-icons/hi2";
 import { FiEdit } from "react-icons/fi";
+import { BiPencil } from "react-icons/bi";
+import { RxCross2 } from "react-icons/rx";
 
 const Card = ({
   setChangeBtnText,
@@ -39,30 +41,44 @@ const Card = ({
       });
     }
   };
-
+  console.log(todo.title.length);
   return (
     <>
       <div className="container d-flex justify-content-center mb-3">
         <div className="card w-75" style={{ maxWidth: "50rem" }}>
-          <div className="card-body d-flex p-2 ps-3 pe-2">
+          <div className="card-body d-flex p-2 ps-3 pe-2 ">
             <input
               type="checkbox"
-              className={styles.checkbox}
+              className={`${styles.checkbox}`}
               onClick={() => checkboxInputHandler(todo)}
             />
+
             <div
               className={todo.checked ? styles.strikethrough : styles.todo_text}
             >
               {todo.title}
             </div>
-            <FiEdit
-              className={todo.edit ? styles.editOn : styles.edit}
-              onClick={() => editHandler(todo)}
-            />
-            <HiOutlineTrash
-              className={styles.trashIcon}
-              onClick={() => deleteHandler(todo)}
-            />
+            <div className="container w-auto hstack align-self-start">
+              <BiPencil
+                className={
+                  todo.edit ? styles.pencilIconActive : styles.pencilIcon
+                }
+                onClick={() => editHandler(todo)}
+              />
+              <RxCross2
+                className={styles.deleteIcon}
+                onClick={() => deleteHandler(todo)}
+              />
+
+              {/* <FiEdit
+                className={todo.edit ? styles.editOn : styles.edit}
+                onClick={() => editHandler(todo)}
+              /> */}
+              {/* <HiOutlineTrash
+                className={styles.trashIcon}
+                onClick={() => deleteHandler(todo)}
+              /> */}
+            </div>
           </div>
         </div>
       </div>
