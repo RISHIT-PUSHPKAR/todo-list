@@ -1,43 +1,12 @@
 .checkbox {
-  margin-right: 1.5rem;
   flex-shrink: 0;
+  flex-basis: auto;
   border: none;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-self: center;
-}
-
-.todo_text {
-  flex-basis: 90%;
-  align-self: center;
-  justify-self: flex-start;
-  font-size: 2rem;
-}
-
-/* .inputBox {
-  display: flex;
+  height: 2rem;
+  width: 2rem;
   align-self: flex-start;
-
-  outline: 1px solid green;
-} */
-
-/* .edit {
-  flex-shrink: 0;
-  stroke: #959595;
-  margin: 0 1rem;
-  font-size: 2.6rem;
-  align-self: center;
-  text-align: end;
+  justify-self: center;
 }
-
-.editOn {
-  flex-shrink: 0;
-  margin: 0 1rem;
-  font-size: 2.6rem;
-  align-self: center;
-  text-align: end;
-  stroke: #002ca3;
-}  */
 
 .pencilIcon {
   fill: #959595;
@@ -62,9 +31,11 @@
 }
 
 .deleteIcon {
+  margin-left: 0.5rem;
   color: #959595;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   align-self: center;
+  justify-self: flex-end;
   text-align: end;
   animation: all 0.1s ease-in-out;
 }
@@ -77,46 +48,7 @@
   transform: scale(0.74);
 }
 
-/* .edit:hover {
-  stroke: #002ca3;
-} */
-
-/* .edit:active {
-  transform: scale(0.94);
-} */
-/* 
-.trashIcon {
-  flex-shrink: 0;
-  stroke: #959595;
-  font-size: 2.8rem;
-  align-self: center;
-  text-align: end;
-} */
-
-/* .trashIcon:hover {
-  stroke: #ff4545;
-  animation: trashRotate 0.2s linear;
-}
-
-.trashIcon:active {
-  transform: scale(0.94);
-} */
-
-.strikethrough {
-  text-decoration: line-through;
-  flex-basis: 90%;
-  align-self: center;
-  justify-self: flex-start;
-  font-size: 2rem;
-  opacity: 0.5;
-}
-
 @media (max-width: 58rem) {
-  .card {
-    width: 60%;
-    height: 6.5vh;
-  }
-
   .pencilIconActive,
   .pencilIcon,
   .deleteIcon {
@@ -128,18 +60,9 @@
     height: 2.2rem;
     width: 2.2rem;
   }
-  .todo_text,
-  .strikethrough {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 40rem) {
-  .card {
-    width: 70%;
-    height: 5.5vh;
-  }
-
   .pencilIconActive,
   .pencilIcon,
   .deleteIcon {
@@ -149,9 +72,5 @@
   .checkbox {
     height: 1.8rem;
     width: 1.8rem;
-  }
-  .todo_text,
-  .strikethrough {
-    font-size: 2rem;
   }
 }

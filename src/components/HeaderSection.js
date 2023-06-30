@@ -54,7 +54,8 @@ const HeaderSection = ({
             className="col d-flex justify-content-center justify-content-lg-start"
           >
             <input
-              className="form-control fs-2 w-50 border-1 border-primary"
+              className={`fs-1 form-control border-1 border-primary`}
+              style={{ width: "21rem" }}
               type="text"
               placeholder=" Enter Your Todos..."
               value={input}
@@ -63,7 +64,7 @@ const HeaderSection = ({
             />
             <button
               type="submit"
-              className="btn btn-primary btn-lg px-5 py-auto ms-5 fs-2"
+              className="btn btn-primary btn-lg px-5 py-auto ms-5 fs-2 fs-lg-1"
             >
               {changeBtnText ? "Save" : "Add"}
             </button>
