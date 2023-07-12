@@ -42,36 +42,33 @@ const HeaderSection = ({
   };
 
   return (
-    <nav>
-      <div className="container p-5 ">
-        <div className="row flex-lg-row flex-column align-items-center">
-          <div className="col col-3">
-            <h1 className="display-2 fw-medium pb-3">todo</h1>
-          </div>
-
-          <form
-            onSubmit={submitHandler}
-            className="col d-flex justify-content-center justify-content-lg-start"
-          >
-            <input
-              className={`fs-1 form-control border-1 border-primary`}
-              style={{ width: "21rem" }}
-              type="text"
-              placeholder=" Enter Your Todos..."
-              value={input}
-              onChange={inputHandler}
-              required
-            />
-            <button
-              type="submit"
-              className="btn btn-primary btn-lg px-5 py-auto ms-5 fs-2 fs-lg-1"
-            >
-              {changeBtnText ? "Save" : "Add"}
-            </button>
-          </form>
+    <div className=" container py-5 col-12  col-lg-9  d-flex justify-content-center">
+      <div className=" px-4 col-11 d-flex flex-wrap justify-content-center">
+        <div className="col col-2 me-md-4">
+          <h1 className="display-2 fw-medium">todo</h1>
         </div>
+        <form
+          onSubmit={submitHandler}
+          className="d-flex justify-content-center"
+        >
+          <input
+            className=" fs-1 form-control border-1 border-primary "
+            type="text"
+            placeholder=" Enter Your Todos..."
+            value={input}
+            onChange={inputHandler}
+            required
+          />
+
+          <button
+            type="submit"
+            className="btn btn-primary btn-lg px-5 ms-4 fs-1"
+          >
+            {changeBtnText ? "Save" : "Add"}
+          </button>
+        </form>
       </div>
-    </nav>
+    </div>
   );
 };
 

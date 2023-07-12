@@ -42,16 +42,15 @@ const Card = ({
   return (
     <>
       <div
-        className="container d-flex border border-secondary rounded-3
-      justify-content-center align-items-center py-3 px-3 mb-4 w-75 "
-        style={{ maxWidth: "70rem" }}
+        className="container col-10 col-lg-7 col-xl-5 d-flex border border-secondary rounded-3
+        py-3 px-3 mb-4"
       >
         <div className="checkboxContainer d-flex h-100 ms-2">
           <input
             type="checkbox"
             className={`${styles.checkbox} ${
-              todo.title.length > 48 ? "align-self-start" : "align-self-center"
-            } ${todo.title.length > 48 ? "mt-2" : "p-0"}`}
+              todo.title.length > 30 ? "align-self-start" : "align-self-center"
+            } ${todo.title.length > 30 ? "mt-2" : "p-0"}`}
             onClick={() => checkboxInputHandler(todo)}
           />
         </div>
@@ -70,22 +69,22 @@ const Card = ({
             className={`${
               todo.edit
                 ? `${styles.pencilIconActive} ${
-                    todo.title.length > 48
+                    todo.title.length > 30
                       ? "align-self-start"
                       : "align-self-center"
-                  } ${todo.title.length > 48 ? "mt-2" : "p-0"}`
+                  } ${todo.title.length > 30 ? "mt-2" : "p-0"}`
                 : `${styles.pencilIcon} ${
-                    todo.title.length > 48
+                    todo.title.length > 30
                       ? "align-self-start"
                       : "align-self-center"
-                  } ${todo.title.length > 48 ? "mt-2" : "p-0"}`
+                  } ${todo.title.length > 30 ? "mt-2" : "p-0"}`
             }`}
             onClick={() => editHandler(todo)}
           />
           <RxCross2
             className={`${styles.deleteIcon} ${
-              todo.title.length > 48 ? "align-self-start" : "align-self-center"
-            } ${todo.title.length > 48 ? "mt-2" : "p-0"}`}
+              todo.title.length > 30 ? "align-self-start" : "align-self-center"
+            } ${todo.title.length > 30 ? "mt-2" : "p-0"}`}
             onClick={() => deleteHandler(todo)}
           />
         </div>
