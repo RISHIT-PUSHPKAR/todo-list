@@ -52,7 +52,7 @@ const HeaderSection = ({
           className="d-flex justify-content-center"
         >
           <input
-            className=" fs-1 form-control border-1 border-primary "
+            className=" fs-2 form-control border-1 border-primary "
             type="text"
             placeholder=" Enter Your Todos..."
             value={input}
