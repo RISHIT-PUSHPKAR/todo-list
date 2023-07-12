@@ -50,7 +50,7 @@ const Card = ({
             type="checkbox"
             className={`${styles.checkbox} ${
               todo.title.length > 30 ? "align-self-start" : "align-self-center"
-            } ${todo.title.length > 30 ? "mt-2" : "p-0"}`}
+            } ${todo.title.length > 30 ? "mt-2" : "p-0"} `}
             onClick={() => checkboxInputHandler(todo)}
           />
         </div>
@@ -60,6 +60,7 @@ const Card = ({
               ? "text-decoration-line-through opacity-25 flex-grow-1 ms-3 fs-2 "
               : "flex-grow-1 align-self-center ms-3 fs-2"
           }
+          style={{ wordBreak: "break-word" }}
         >
           {todo.title}
         </div>
