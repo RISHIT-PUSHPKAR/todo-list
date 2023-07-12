@@ -1,140 +1,72 @@
-.card {
-  /* background-color: #ecf1ff; */
-  background-color: white;
-  border: 1.5px solid #b3b3ba;
-  padding: 3rem 2rem;
-  border-radius: 0.6rem;
-  display: flex;
-  width: 36%;
-  margin: 0.8rem 0;
-}
-
 .checkbox {
-  /* margin-right: 1.5rem; */
-  margin: 0 2rem 30% 0;
   flex-shrink: 0;
+  flex-basis: auto;
   border: none;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-self: center;
-}
-
-.todo_text {
-  /* background-color: #ecf1ff; */
+  height: 2rem;
+  width: 2rem;
   align-self: flex-start;
-  font-size: 2rem;
-  overflow: hidden;
-  padding-right: 2rem;
+  justify-self: center;
 }
 
-.edit {
-  flex-shrink: 0;
-  stroke: #959595;
-  /* margin: 0 1rem; */
-  margin: 0 2rem 30% 0;
+.pencilIcon {
+  fill: #959595;
   font-size: 2.6rem;
   align-self: center;
   text-align: end;
   margin-left: auto;
 }
 
-.edit:hover {
-  stroke: #002ca3;
+.pencilIconActive {
+  font-size: 2.6rem;
+  align-self: center;
+  text-align: end;
+  fill: #002ca3;
 }
 
-.edit:active {
+.pencilIcon:hover {
+  fill: #002ca3;
+}
+
+.pencilIcon:active {
   transform: scale(0.94);
 }
 
-.editOn {
-  margin-left: auto;
-  flex-shrink: 0;
-  /* margin: 0 1rem; */
-  margin: 0 2rem 30% 0;
-  font-size: 2.6rem;
-  align-self: center;
-  text-align: end;
-  stroke: #002ca3;
-}
-
-.trashIcon {
-  margin: 0 2rem 0 0;
-  flex-shrink: 0;
-  stroke: #959595;
+.deleteIcon {
+  margin-left: 0.5rem;
+  color: #959595;
   font-size: 2.8rem;
   align-self: center;
+  justify-self: flex-end;
   text-align: end;
+  animation: all 0.1s ease-in-out;
 }
 
-.trashIcon:hover {
-  stroke: #ff4545;
-  animation: trashRotate 0.2s linear;
+.deleteIcon:hover {
+  color: #ff4545;
 }
 
-.trashIcon:active {
-  transform: scale(0.94);
-}
-
-.strikethrough {
-  overflow: hidden;
-  padding-right: 2rem;
-  text-decoration: line-through;
-  align-self: flex-start;
-  font-size: 2rem;
-  opacity: 0.5;
-}
-
-@keyframes trashRotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(45deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-45deg);
-  }
+.deleteIcon:active {
+  transform: scale(0.74);
 }
 
 @media (max-width: 58rem) {
-  .card {
-    width: 70%;
-    height: auto;
-  }
-
-  .editOn,
-  .edit,
-  .trashIcon {
+  .pencilIconActive,
+  .pencilIcon,
+  .deleteIcon {
     font-size: 2.8rem;
   }
 
   .checkbox {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-  .todo_text,
-  .strikethrough {
-    font-size: 2rem;
+    justify-self: start;
+    height: 2.2rem;
+    width: 2.2rem;
   }
 }
 
-/* @media (max-width: 50rem) {
-  .card {
-    background-color: aqua;
-  }
-} */
-/* @media (max-width: 40rem) {
-  .card {
-    width: 70%;
-    height: 6rem;
-  }
-
-  .editOn,
-  .edit,
-  .trashIcon {
+@media (max-width: 40rem) {
+  .pencilIconActive,
+  .pencilIcon,
+  .deleteIcon {
     font-size: 2rem;
   }
 
@@ -142,8 +74,4 @@
     height: 2.5rem;
     width: 2.5rem;
   }
-  .todo_text,
-  .strikethrough {
-    font-size: 2rem;
-  }
-} */
+}

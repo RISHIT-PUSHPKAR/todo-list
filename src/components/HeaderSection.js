@@ -1,4 +1,3 @@
-import styles from "./HeaderSection.module.css";
 import { v4 as uuidv4 } from "uuid";
 
 const HeaderSection = ({
@@ -43,26 +42,33 @@ const HeaderSection = ({
   };
 
   return (
-    <form onSubmit={submitHandler}>
-      <ul>
-        <li className={styles.logo}>todo</li>
-        <li className={styles.input_container}>
+    <div className=" container py-5 col-12  col-lg-9  d-flex justify-content-center">
+      <div className=" px-4 col-11 d-flex flex-wrap justify-content-center">
+        <div className="col col-2 me-md-4">
+          <h1 className="display-2 fw-medium">todo</h1>
+        </div>
+        <form
+          onSubmit={submitHandler}
+          className="d-flex justify-content-center"
+        >
           <input
-            className={styles.input}
+            className=" fs-1 form-control border-1 border-primary "
             type="text"
-            placeholder="Enter Your Todos..."
+            placeholder=" Enter Your Todos..."
             value={input}
             onChange={inputHandler}
             required
           />
-        </li>
-        <li className={styles.addBtn_container}>
-          <button type="submit" className={styles.addBtn}>
+
+          <button
+            type="submit"
+            className="btn btn-primary btn-lg px-5 ms-4 fs-1"
+          >
             {changeBtnText ? "Save" : "Add"}
           </button>
-        </li>
-      </ul>
-    </form>
+        </form>
+      </div>
+    </div>
   );
 };
 
