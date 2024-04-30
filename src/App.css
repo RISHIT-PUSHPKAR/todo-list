@@ -1,0 +1,8 @@
+.container::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* If the above selector doesn't work, try using a more specific selector */
+.container > .list-unstyled::-webkit-scrollbar {
+  display: none !important;
+}

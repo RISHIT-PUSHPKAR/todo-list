@@ -10,6 +10,7 @@ const Card = ({
   todo,
   setTodoList,
   todoList,
+  dragControl,
 }) => {
   const deleteHandler = (todo) => {
     setTodoList(todoList.filter((obj) => obj.id !== todo.id));
@@ -39,11 +40,13 @@ const Card = ({
       });
     }
   };
+
+  console.log(dragControl);
   return (
     <>
       <div
         className="container col-10 col-lg-7 col-xl-5 d-flex border border-secondary rounded-3
-        py-3 px-3 mb-4"
+        py-3 px-3 mb-4 d-flex justify-centent-center align-items-center"
       >
         <div className="checkboxContainer d-flex h-100 ms-2">
           <input
