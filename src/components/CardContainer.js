@@ -33,7 +33,6 @@ const CardContainer = ({
                 >
                   <div className="col-12">
                     <Card
-                      dragControl={controls}
                       setEditTodo={setEditTodo}
                       changeBtnText={changeBtnText}
                       setChangeBtnText={setChangeBtnText}
